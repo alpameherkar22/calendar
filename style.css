@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.box 
+{
+    position: relative;
+}
+
+.container
+{
+    position: relative;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1), -15px -15px 30px #f0c2d6 ;
+}
+
+#calendar
+{
+    width: 100%;
+    padding: 30px 30px;
+}
+
+#calendar table
+{
+    width: 100%;
+    border-spacing: 15px;
+    margin-top: 40px;
+}
+
+#calendar table tr:nth-child(1) td
+{
+    background: #d6337a;
+    color: #f0c2d6;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #f0c2d6;
+    border: #ab9aa1;
+}
+
+#calendar table tr:nth-child(1) td:nth-child(1)
+{
+    background: #ab0542;
+}
+
+#calendar table td
+{
+    color: #d6337a;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 1.25em;   
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #ab9aa1;
+}
+
+#calendar table td:hover
+{
+    box-shadow: inset 5px 5px 10px rgba(126, 21, 73, 0.361), 
+    inset -5px -5px 10px #fff;
+}
+
+#calendar table td:first-child
+{
+    color:#ab0542;
+}
+
+.calendar-month-container .calendar-target-date
+{
+    background: #d6337a !important;
+    color: #f0c2d6 !important;
+    box-shadow: inset 5px 5px 10px rgba(126, 21, 73, 0.361),
+    inset -5px -5px 10px #ab9aa1 !important;
+    border: 2px solid #ab9aa1;
+}
+
+.calendar-month-container .calendar-header 
+.calendar-prev-next-btn.prev-btn
+{
+    width: 45px;
+    height: 45px;
+    font-size: 2em;
+    left: 15px;
+    color:#d6337a;
+    background: #f0c2d6;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(126, 21, 73, 0.361), 
+    -5px -5px 10px #ab9aa1;
+}
+
+.calendar-month-container .calendar-header 
+.calendar-prev-next-btn.next-btn
+{
+    width: 45px;
+    height: 45px;
+    font-size: 2em;
+    right: 15px;
+    color:#d6337a;
+    background: #f0c2d6;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(126, 21, 73, 0.361), 
+    -5px -5px 10px #ab9aa1;
+}
+
+.calendar-month-container .calendar-header 
+.calendar-prev-next-btn.prev-btn:active
+{
+    box-shadow: inset 5px 5px 10px rgba(126, 21, 73, 0.361), 
+    inset -5px -5px 10px #ab9aa1; 
+}
+
+.calendar-month-container .calendar-header 
+.calendar-prev-next-btn.next-btn:active
+{
+    box-shadow: inset 5px 5px 10px rgba(126, 21, 73, 0.361), 
+    inset -5px -5px 10px #ab9aa1; 
+}
+
+.calendar-span-month-year
+{
+    color: #d6337a;
+    font-size: 2em;
+    font-weight: 400;
+}
